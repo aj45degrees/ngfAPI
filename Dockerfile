@@ -1,4 +1,4 @@
-FROM python:3.10.0-alpine
+FROM python:3.8-alpine
 LABEL authors="45 Degrees && Caffeine Devs"
 
 RUN pip install --upgrade pip
