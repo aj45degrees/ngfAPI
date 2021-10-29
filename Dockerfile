@@ -1,5 +1,5 @@
 FROM python:3.10.0-alpine
-LABEL version="0.1"
+LABEL authors="45 Degrees && Caffeine Devs"
 
 ENV PYTHONBUFFERED 1
 
@@ -8,7 +8,7 @@ RUN pip install -r /requirements.txt
 
 RUN mkdir /app
 WORKDIR /app
-COPY ./app /app
+COPY ./app/ /app
 
 RUN adduser -D user
 USER user

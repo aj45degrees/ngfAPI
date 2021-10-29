@@ -1,0 +1,44 @@
+docker-compose run --rm app sh -c "python manage.py makemigrations"
+
+docker-compose run --rm app sh -c "python manage.py test && flake8"
+
+docker-compose run app sh -c "python manage.py test && flake8"
+
+docker-compose run app sh -c "python manage.py startapp core"
+
+docker-compose run app sh -c "python manage.py makemigrations core"
+
+docker-compose up
+
+
+Team Reveal Agenda
+* Goal
+* Strategy
+* Tactics
+* Architecture
+    * microservices - backend
+        * app
+        * core
+        * user
+        * test_app1 = recipe == to be replaced by pdf app
+    * SPA component - frontend 
+* TDD approach
+* Big Rocks
+    * Backend
+    * Frontend
+    * Containerization
+    * authentication
+    * admin
+    * user
+    * PDF templates
+    * data management
+    * PDF creator
+
+Algorithm
+    * what is the BIG question?
+        * what are SMALL questions that build up to BIG one?
+    * answer each small question?
+    * store each answer in a variable?
+    * process each answer to reduce multiple answers down to 1?
+    * update status as you progress until reaches None left?
+    * output the answer to the BIG question?
