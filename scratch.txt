@@ -46,3 +46,5 @@ Algorithm
 
 sources:
 https://flutterq.com/solved-warning-running-pip-as-the-root-user-can-result-in-broken-permissions-and-conflicting-behaviour/
+
+https://stackoverflow.com/questions/67726034/django-attributeerror-type-object-autofield-has-no-attribute-rsplit-afte
