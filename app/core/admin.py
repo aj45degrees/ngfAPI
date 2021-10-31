@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+# makes it easy to translate app to different languages
 from django.utils.translation import gettext as _
 
 from core import models
