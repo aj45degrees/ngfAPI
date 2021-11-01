@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 LABEL authors="45 Degrees && Caffeine Devs"
 
-ENV PYTHONBUFFERED 1
+ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
 RUN apk add --update --no-cache postgresql-client
