@@ -8,6 +8,9 @@ docker-compose run app sh -c "python manage.py startapp core"
 
 docker-compose run app sh -c "python manage.py makemigrations core"
 
+dj-rest-auth>=2.1.10,<2.2.0
+django-cors-headers>=3.10.0,<3.11.0
+
 docker-compose up
 
 docker-compose build
@@ -47,4 +50,9 @@ Algorithm
 sources:
 https://flutterq.com/solved-warning-running-pip-as-the-root-user-can-result-in-broken-permissions-and-conflicting-behaviour/
 
-https://stackoverflow.com/questions/67726034/django-attributeerror-type-object-autofield-has-no-attribute-rsplit-afte
+https://stackoverflow.com/questions/67726034/django-attributeerror-type-object-autofield-has-no-attribute-rsplit-after
+
+https://spapas.github.io/2021/08/25/django-token-rest-auth/
+https://github.com/adamchainz/django-cors-headers#setup
+
+https://spapas.github.io/2021/08/25/django-token-rest-auth/
