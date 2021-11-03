@@ -34,7 +34,6 @@ class AuthTokenSerializer(serializers.Serializer):
     email = serializers.CharField()
     password = serializers.CharField(
         style={'input_type': 'password'},
-        # do not remove white spaces users add to their passwords
         trim_whitespace=False
     )
 
@@ -51,7 +50,7 @@ class AuthTokenSerializer(serializers.Serializer):
 
         if not user:
             msg = _('Unable to authenticate with the provided credentials')
-            raise serializers.ValidationError(msg, code='authentication')
+            raise serializers.ValidationError(msg, code='authorization')
 
         attrs['user'] = user
         return attrs
