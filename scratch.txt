@@ -15,6 +15,8 @@ docker-compose up
 
 docker-compose build
 
+[] TODO: PROJECT_PATH = os.path.abspath(os.path.dirname(__name__))
+
 Team Reveal Agenda
 * Goal
 * Strategy
